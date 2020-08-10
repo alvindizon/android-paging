@@ -8,7 +8,7 @@ import retrofit2.HttpException
 import java.io.IOException
 
 // GitHub page API is 1 based: https://developer.github.com/v3/#pagination
-private const val GITHUB_STARTING_PAGE_INDEX = 1
+const val GITHUB_STARTING_PAGE_INDEX = 1
 
 class GithubPagingSource(private val service: GithubService, private val query: String)
     :PagingSource<Int, Repo>(){
